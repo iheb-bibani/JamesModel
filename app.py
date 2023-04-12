@@ -24,7 +24,7 @@ if uploaded_file is not None:
   y = df['SFG20 Task Code'].values
 
   # load the model from disk
-  loaded_model = joblib.load('james_model.sav')
+  loaded_model = joblib.load('james_model.sav.zip')
 
   # Make predictions on the testing set
   predictions = loaded_model.predict(X)
